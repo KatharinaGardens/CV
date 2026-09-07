@@ -154,6 +154,243 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
+Searching for an entry-level position in AI Engineering or Data Analysis that will allow me to leverage my education and experience in Linguistics, AI, Data Management, and Natural Language Processing.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2025 - 2026 & MSc Speech \& Language Processing at \textbf{University of Edinburgh} \hfill \normalsize (Expected Nov 2026) \\
+
+2022 - 2025 & BA Linguistics at \textbf{University of Manchester} \hfill (First Class with Honours) \\ 
+
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+
+%Projects
+\section{Projects}
+
+
+\begin{joblong}{Investigating Neural Whispered Speech | \normalfont EveryVoice, Hifi-GAN, Remote Computing, TTS, Linux}{}
+\item Investigated how perceived performance of whispered speech from a neural TTS model correlated to objective evaluation metrics, informed by linguistic descriptions of whispered speech.
+\item Trained a FastSpeech2-like TTS model on collected voice data, utilizing a remote connection to Linux GPU servers, modifying open source code to add an additional linguistically-informed loss term.
+\end{joblong}
+
+\begin{joblong}{Qwen NLP | \normalfont Qwen 2.5, Reinforcement Learning, Supervised Finetuning, CoMAT, GRPO, QA }{}   
+\item Utilised the Chain of Mathematically Annotated Thought method to investigate the reasoning abilities of the Qwen 2.5 model.
+\item Evaluated the performance of the Qwen model in both zero-shot and supervised finetuning scenarios.
+\item Performed Group Relative Policy Optimization using reward functions to improve model performance.
+\end{joblong}  
+\begin{joblong}{Limited Vocabulary Automatic Speech Recognition | \normalfont Open\_fst, WFSTs, ASR, Viterbi}{}  
+\item Experimented with various methods of system tuning and pruning to improve ASR model accuracy and computational efficiency.
+\item Improved word error rate of the limited vocabulary Weighted Finite State Transducer model from 146\% to 44\%.
+\end{joblong}
+
+
+%Experience
+\section{Work Experience}
+
+\begin{joblong}{Data Fellowship | \normalfont Ditchley Foundation}{Jul 2024 - Aug 2024}
+\item Worked with the Neo4j graphing language to identify underrepresented company stakeholders.
+\item Leveraged attendee data to identify current and future trends in the green energy sector.
+\end{joblong}
+
+
+\begin{joblong}{Hospitality Assistant | \normalfont University of Manchester}{Jan 2023 - Jul 2025}
+\item Managed the hospitality events unsupervised, ensuring customer satisfaction.
+\item Trained new hires on company procedures and organizational strategies.
+\end{joblong}
+  
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+% \section{Publications}
+% \begin{refsection}[citations.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Python &  \normalsize{PyTorch, NLTK, NumPy, Sentence Transformers, Marian MT}\\
+Corpora  &  \normalsize{Regular Expressions, RStudio, Hugging Face, AntConc}\\  
+Linguistics & \normalsize{Semantics, Syntax, Grammar, Typology}\\
+Other & \normalsize{SQL, PHP, HTML, Linux}
+\end{tabularx}
+
+\vfill
+% \center{\footnotesize Last updated: \today}
+
+\end{document}
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt, label=\textcolor{linkcolour}{\textbullet}]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Cassandra Papp} \\[7.5pt]
+\href{https://github.com/KatharinaGardens}{\raisebox{-0.05\height}\faGithub\ KatharinaGardens} \ $|$ \ 
+\href{https://linkedin.com/in/cassandra-papp}{\raisebox{-0.05\height}\faLinkedin\ Cassandra Papp} \ $|$ \ 
+% \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{mailto:pappcassandra@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ pappcassandra@gmail.com} \ $|$ \ 
+\href{tel:+447453599485}{\raisebox{-0.05\height}\faMobile \ +44.7453.599.485} \\
+\end{tabularx}
+
+
+
+%Interests/ Keywords/ Summary
+\section{Summary}
 Searching for an entry-level position in AI Engineering or Data Analysis that will allow me to leverage my education and experience in Linguistics, AI, and data management.
 
 %----------------------------------------------------------------------------------------
